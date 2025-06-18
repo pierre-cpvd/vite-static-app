@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - yarn install
+  build:
+    commands:
+      - yarn run build
+artifacts:
+  files:
+    - '**/*'
+  base-directory: dist
