@@ -9,7 +9,7 @@ phases:
   build:
     commands:
       - yarn run build
-      - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_ID --paths "/*"
+      - aws cloudfront create-invalidation --distribution-id E116TIA2V07C7Z --paths "/*"
 artifacts:
   files:
     - '**/*'
